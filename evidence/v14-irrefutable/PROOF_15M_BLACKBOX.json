@@ -1,62 +1,36 @@
 {
-  "timestamp": "2026-10-17T12:56:37.435667",
-  "runner_version": "V15 - closes 3 gaps - EEHIMPAG@100, count in PASS, sqlite SHA256",
-  "documentation": "Runner expects local files. External reviewer cannot reproduce SQLite count/hash without access to that DB or a verifiable test environment. No private engine imported. No data rows exposed. Only hashes, sizes, markers, counts.",
-  "what_this_proves": {
-    "format_signature_exists": "Supported if format_magic_ok True",
-    "format_size_819300": "Recorded, bound to SHA256",
-    "sqlite_rejects_proof_file": "Supported if sqlite_rejects_format_file True",
-    "sqlite_15M_count": "Recorded, bound to SHA256 and size, requires local DB to reproduce",
-    "private_engine_not_exposed": "Yes - runner does not import private engine",
-    "limitations": "Does NOT by itself prove full engine SQLite-independent, nor that 819300-byte file physically stores 15M records. Proves published artifacts and measured checks."
-  },
+  "timestamp": "2026-10-17T13:43:30.724959",
+  "runner_version": "V16 FINAL - dynamic hashes, count, rejection error - JSON from run",
+  "readme_clarification": "The 819,300-byte file EEHIM_DB_V14_100_PERCENT_PROOF_NO_SQLITE.db is a format-proof artifact (100-byte header EEHIMDB-V14 + 100 pages x 8192 bytes with EEHIMPAG marker) that proves own file format and SQLite rejection, not the full 15-million-record database which resides separately as a 2,025,828,352-byte SQLite baseline file (SHA-256 bf44b42bce8f392d... COUNT 15000000).",
   "format_db": {
     "path": "D:\\EEHIMDB\\dist\\EEHIM_DB_V14_100_PERCENT_PROOF_NO_SQLITE.db",
-    "exists": true,
     "size": 819300,
-    "size_ok": true,
-    "sha256": "0edddcf8e14bd6d0c37b38e48f81ea3ad86939a73a34f44570ede36154d6a7d2",
+    "sha256_dynamic": "0edddcf8e14bd6d0c37b38e48f81ea3ad86939a73a34f44570ede36154d6a7d2",
     "sha256_ok": true,
-    "expected_sha256": "0edddcf8e14bd6d0c37b38e48f81ea3ad86939a73a34f44570ede36154d6a7d2",
-    "magic": "b'EEHIMDB-V14\\x00\\x00\\x00\\x00\\x00'",
-    "magic_ok": true,
-    "page_size": 8192,
-    "page_size_ok": true,
-    "version": 14,
-    "version_ok": true,
-    "cookie": "0xee14ee14",
-    "cookie_ok": true,
-    "is_own": true,
-    "not_sqlite_magic": true,
-    "eehimpag_marker_at_100": "b'EEHIMPAG'",
-    "eehimpag_marker_at_100_ok": true,
-    "sqlite_rejects": true,
-    "hex_0_100": "454548494d44422d563134000000000000002000000e00010000006400000000ee14ee1400000001000000006ad2f17fee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14"
+    "eehimpag_at_100": "b'EEHIMPAG'",
+    "eehimpag_ok": true,
+    "rejection_error": "file is not a database",
+    "rejection_ok": true
   },
   "sqlite_db": {
     "path": "D:\\EEHIMDB\\dist\\ACTIVE_15M.db",
-    "exists": true,
     "size": 2025828352,
-    "sha256": "bf44b42bce8f392d10088749737e421d26d5bcaa26c5b525c5dcc43397857bc3",
-    "count": 15000000,
-    "count_ok": true,
-    "expected_count": 15000000,
-    "note": "SHA256 binds count to immutable file. External reviewer needs this file to reproduce."
+    "sha256_dynamic": "bf44b42bce8f392d10088749737e421d26d5bcaa26c5b525c5dcc43397857bc3",
+    "count_dynamic": 15000000,
+    "count_ok": true
   },
   "checks": {
     "format_magic_ok": true,
     "page_size_ok": true,
     "version_ok": true,
     "cookie_ok": true,
-    "is_own": true,
-    "not_sqlite_magic": true,
     "eehimpag_marker_at_100_ok": true,
     "sqlite_rejects_format_file": true,
+    "sqlite_rejection_error_ok": true,
     "format_size_ok_819300": true,
-    "format_sha256_ok": true,
+    "format_sha256_ok_dynamic": true,
     "sqlite_exists": true,
-    "sqlite_count_ok_15M": true
+    "sqlite_count_ok_15M_dynamic": true
   },
-  "PASS": true,
-  "verdict": "PASS only if ALL checks True - FORMAT 819300 EEHIMDB-V14 8192 EEHIMPAG@100 0xEE14EE14 SHA256 0edddcf8 - SQLITE 15M bound to SHA256 COUNT 15000000 - NO ENGINE EXPOSED - NO ROWS EXPOSED"
+  "PASS": true
 }
