@@ -1,0 +1,3 @@
+# Large EEHIM sample DB - exceeds GitHub 100MB limit - keep locally, use LFS or release 
+evidence/v14-irrefutable/*.db 
+!evidence/v14-format-proof/*.db 

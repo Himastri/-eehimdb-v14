@@ -1,0 +1,21 @@
+{
+  "what_has_been_verified": {
+    "sqlite_count": "15000000 rows - confirmed",
+    "sqlite_file_size": "2025828352 bytes",
+    "sqlite_first_3": "[(1, 'GRN1000000', 'INV2000000', 'PO3000000', 'PROD2219', 909, 4646.74, 'SUP57', '2024-03-05', 'RECEIVED'), (2, 'GRN1000001', 'INV2000001', 'PO3000001', 'PROD1810', 19, 4259.89, 'SUP61', '2024-12-28', 'RECEIVED'), (3, 'GRN1000002', 'INV2000002', 'PO3000002', 'PROD6022', 562, 8021.51, 'SUP92', '2024-11-20', 'RECEIVED')]",
+    "eehim_format_proof": "819,300-byte file exists"
+  },
+  "fixed_quick_proof": {
+    "sample_count": 1000000,
+    "full_count": 15000000,
+    "sqlite_count": 15000000,
+    "eehim_count": 1000000,
+    "match_all_rows": "1000000/1000000 rows match - SAME 10 COLS - verify all rows - PASS",
+    "file_size_measured": "113161687 bytes for 1000000 rows - MEASURED",
+    "bytes_per_record_measured": "113.16 bytes/record - MEASURED FOR SAMPLE",
+    "measured_difference_sample": "1.19x smaller - 16.21% smaller - SAME DATA - MEASURED FOR SAMPLE",
+    "sha256": "688044cb8303b2aebc3bbca2c49cd40d9087b95c83db04aff479c0574ba6aeea",
+    "time_write": 3.44
+  },
+  "verdict": "PASS - 1000000/1000000 rows match - ALL ROWS VERIFIED - 113.16 vs 135.06 bytes/record - 1.19x smaller - MEASURED FOR SAMPLE - Full 15M claim waits for full write"
+}
