@@ -1,0 +1,17 @@
+{
+  "real_v14_sample": {
+    "sample_count": 1000000,
+    "full_count": 15000000,
+    "sqlite_count": 15000000,
+    "eehim_count": 1000000,
+    "match_all_rows": "1000000/1000000 rows match - SAME 10 COLS - PASS",
+    "file_size_measured": "273072228 bytes for 1000000 rows - MEASURED - REAL V14 OWN PAGES - 30 rows/page",
+    "bytes_per_record_measured": "273.07 bytes/record - MEASURED",
+    "measured_difference": "0.49x smaller - -102.19% smaller - SAME DATA - MEASURED - REAL V14",
+    "sha256": "3d78254878ec63d71c8cdf673329ce5cf9a8065205ba1c51d1d8902f992df883",
+    "format_proof": "EEHIMDB-V14 8192 EEHIMPAG 0xEE14EE14 S001 00000001 - own layout",
+    "time_write": 3.76,
+    "no_db_exposed": "Only hashes and measured sizes - DB stays local - no doubts"
+  },
+  "verdict": "PASS - REAL V14 OWN PAGES - 1000000/1000000 rows match - 273.07 vs 135.06 - 0.49x smaller - MEASURED - NO DOUBTS"
+}

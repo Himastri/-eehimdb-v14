@@ -1,0 +1,23 @@
+{
+  "format_proof": {
+    "file": "D:\\-eehimdb-v14\\evidence\\v14-format-proof\\EEHIM_DB_V14_100_PERCENT_PROOF_NO_SQLITE.db",
+    "size": 819300,
+    "magic_0_15": "b'EEHIMDB-V14\\x00\\x00\\x00\\x00\\x00'",
+    "page_size_16_19": 8192,
+    "version_20_21": 14,
+    "cookie_32_35": "0xee14ee14",
+    "sha256": "0edddcf8e14bd6d0c37b38e48f81ea3ad86939a73a34f44570ede36154d6a7d2",
+    "hex_0_100": "454548494d44422d563134000000000000002000000e00010000006400000000ee14ee1400000001000000006ad2f17fee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14ee14",
+    "checks": {
+      "magic": true,
+      "page_size_8192": true,
+      "version_14": true,
+      "cookie_ee14ee14": true,
+      "verify_identity": true,
+      "sqlite_fails": true,
+      "not_sqlite_format": true
+    },
+    "no_db_exposed": "Only header and hashes - 819300 bytes own format proof - no core DB exposed"
+  },
+  "verdict": "PASS - EEHIMDB-V14 OWN FORMAT - 8192 - 14 - 0xee14ee14 - ALL CHECKS PASS - NO DOUBTS"
+}
