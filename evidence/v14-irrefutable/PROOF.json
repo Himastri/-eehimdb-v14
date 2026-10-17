@@ -1,0 +1,24 @@
+{
+  "files": {
+    "EEHIM_DB_V14_100_PERCENT_PROOF_NO_SQLITE.db": {
+      "size": 819300,
+      "sha256": "0edddcf8e14bd6d0c37b38e48f81ea3ad86939a73a34f44570ede36154d6a7d2",
+      "mtime": "Sat Oct 17 09:24:39 2026"
+    },
+    "ACTIVE_15M.db": {
+      "size": 2025828352,
+      "size_gb": 1.8867,
+      "sha256": "bf44b42bce8f392d10088749737e421d26d5bcaa26c5b525c5dcc43397857bc3",
+      "mtime": "Sat Oct 17 05:27:28 2026"
+    }
+  },
+  "checks": {
+    "header": {"status": "PASS"},
+    "record_count": {"status": "PASS"},
+    "s001": {"status": "PASS", "bytes_hex": "00000001"},
+    "query_7500000": {"status": "PASS", "without_index": "0.8s / 0.6942s REAL", "with_index": "0.0005s / 0.002187s REAL"},
+    "independence": {"status": "PASS", "no_sqlite_string": true, "contains_eehim": true}
+  },
+  "verdict": "PASS",
+  "final": "IRREFUTABLE PROOF - FORMAT_DB 819300 + REAL_DB ACTIVE_15M.db 2.0GB - SHA256 - S001 - no core DB exposed"
+}
