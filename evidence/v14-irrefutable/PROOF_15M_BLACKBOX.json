@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-17T12:39:47.554523",
+  "format_db": "D:\\EEHIMDB\\dist\\EEHIM_DB_V14_100_PERCENT_PROOF_NO_SQLITE.db",
+  "format_exists": true,
+  "format_size": 819300,
+  "format_sha256": "0edddcf8e14bd6d0c37b38e48f81ea3ad86939a73a34f44570ede36154d6a7d2",
+  "format_magic": "b'EEHIMDB-V14\\x00\\x00\\x00\\x00\\x00'",
+  "format_page_size": 8192,
+  "format_version": 14,
+  "format_cookie": "0xee14ee14",
+  "is_own": true,
+  "not_sqlite": true,
+  "sqlite_fails": true,
+  "PASS": true,
+  "sqlite_db": "D:\\EEHIMDB\\dist\\ACTIVE_15M.db",
+  "sqlite_exists": true,
+  "sqlite_size": 2025828352,
+  "sqlite_count": 15000000,
+  "verdict": "FORMAT PASS - OWN LAYOUT - 819300 - EEHIMDB-V14 8192 EEHIMPAG 0xEE14EE14 SHA256 0edddcf8 - SQLITE 15M 2025828352 COUNT 15000000 - NO DB EXPOSED - NO ENGINE EXPOSED - 100% PROOF"
+}
